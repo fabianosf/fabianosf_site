@@ -4,6 +4,7 @@ import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
 import { db } from '../config/firebase'
 import emailjs from '@emailjs/browser'
 import { emailjsConfig } from '../config/emailjs'
+import { validateForm, sanitizeInput, sanitizeForSubmission } from '../utils/validations'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,18 +14,47 @@ const Contact = () => {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState(null)
+  const [validationErrors, setValidationErrors] = useState({
+    name: '',
+    email: '',
+    message: ''
+  })
 
   const handleChange = (e) => {
+    const sanitizedValue = sanitizeInput(e.target.value)
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [e.target.name]: sanitizedValue,
     })
+    
+    // Limpar erro de validação quando usuário digita
+    if (validationErrors[e.target.name]) {
+      setValidationErrors({
+        ...validationErrors,
+        [e.target.name]: ''
+      })
+    }
   }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     setIsSubmitting(true)
     setSubmitStatus(null)
+
+    // Sanitizar dados para envio
+    const sanitizedData = {
+      name: sanitizeForSubmission(formData.name),
+      email: sanitizeForSubmission(formData.email),
+      message: sanitizeForSubmission(formData.message)
+    }
+
+    // Validar formulário antes de enviar
+    const validation = validateForm(sanitizedData)
+    if (!validation.isValid) {
+      setValidationErrors(validation.errors)
+      setIsSubmitting(false)
+      return
+    }
 
     let firebaseSuccess = false
     let emailSuccess = false
@@ -33,9 +63,9 @@ const Contact = () => {
       // 1. Tentar salvar no Firebase Firestore
       try {
         await addDoc(collection(db, 'contacts'), {
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
+          name: sanitizedData.name,
+          email: sanitizedData.email,
+          message: sanitizedData.message,
           timestamp: serverTimestamp(),
           status: 'new'
         })
@@ -52,9 +82,9 @@ const Contact = () => {
           emailjsConfig.serviceId,
           emailjsConfig.templateId,
           {
-            from_name: formData.name,
-            from_email: formData.email,
-            message: formData.message,
+            from_name: sanitizedData.name,
+            from_email: sanitizedData.email,
+            message: sanitizedData.message,
             to_email: 'fabiano.freitas@gmail.com'
           },
           emailjsConfig.publicKey
@@ -70,6 +100,7 @@ const Contact = () => {
       if (firebaseSuccess || emailSuccess) {
         setSubmitStatus('success')
         setFormData({ name: '', email: '', message: '' })
+        setValidationErrors({ name: '', email: '', message: '' })
       } else {
         setSubmitStatus('error')
       }
@@ -142,9 +173,14 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all outline-none"
+                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all outline-none ${
+                    validationErrors.name ? 'border-red-500' : 'border-gray-300'
+                  }`}
                   placeholder="Seu nome completo"
                 />
+                {validationErrors.name && (
+                  <p className="mt-1 text-sm text-red-600">{validationErrors.name}</p>
+                )}
               </div>
 
               <div>
@@ -158,9 +194,14 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all outline-none"
+                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all outline-none ${
+                    validationErrors.email ? 'border-red-500' : 'border-gray-300'
+                  }`}
                   placeholder="seu.email@exemplo.com"
                 />
+                {validationErrors.email && (
+                  <p className="mt-1 text-sm text-red-600">{validationErrors.email}</p>
+                )}
               </div>
 
               <div>
@@ -174,9 +215,14 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows="5"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all outline-none resize-none"
+                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all outline-none resize-none ${
+                    validationErrors.message ? 'border-red-500' : 'border-gray-300'
+                  }`}
                   placeholder="Conte-me sobre seu projeto ou oportunidade..."
                 ></textarea>
+                {validationErrors.message && (
+                  <p className="mt-1 text-sm text-red-600">{validationErrors.message}</p>
+                )}
               </div>
 
               {submitStatus === 'success' && (
