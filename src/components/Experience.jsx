@@ -36,9 +36,9 @@ const Experience = () => {
       role: 'Programador',
       period: '2019',
       location: 'Rio de Janeiro, Brasil',
-      description: 'Suporte a banco de dados e servidores de streaming; desenvolvimento com Java (Spring Boot) e Angular.',
+      description: 'Suporte a banco de dados e servidores de streaming; desenvolvimento com HTML (CSS) e Angular.',
       highlights: [
-        'Desenvolvimento de aplicações com Java Spring Boot',
+        'Desenvolvimento de aplicações com HTML CSS',
         'Frontend com Angular',
         'Suporte a bancos de dados',
         'Manutenção de servidores de streaming',

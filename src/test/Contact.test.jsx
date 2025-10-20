@@ -179,8 +179,8 @@ describe('Componente Contact', () => {
     const githubLink = screen.getByRole('link', { name: /github/i })
     
     expect(emailLink).toHaveAttribute('href', 'mailto:fabiano.freitas@gmail.com')
-    expect(linkedinLink).toHaveAttribute('href', 'https://linkedin.com/in/fabiano-freitas')
-    expect(githubLink).toHaveAttribute('href', 'https://github.com/fabiano-freitas')
+    expect(linkedinLink).toHaveAttribute('href', 'https://www.linkedin.com/in/fabianosfreitas/')
+    expect(githubLink).toHaveAttribute('href', 'https://github.com/fabianosf')
   })
 
   it('deve ter botões de ação secundários', () => {

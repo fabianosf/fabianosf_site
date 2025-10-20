@@ -68,7 +68,7 @@ const Hero = () => {
                 <Mail size={24} />
               </a>
               <a
-                href="https://linkedin.com/in/fabiano-freitas"
+                href="https://www.linkedin.com/in/fabianosfreitas/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-white rounded-full text-gray-700 hover:text-teal-600 hover:bg-teal-50 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-110"
@@ -77,7 +77,7 @@ const Hero = () => {
                 <Linkedin size={24} />
               </a>
               <a
-                href="https://github.com/fabiano-freitas"
+                href="https://github.com/fabianosf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-white rounded-full text-gray-700 hover:text-teal-600 hover:bg-teal-50 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-110"

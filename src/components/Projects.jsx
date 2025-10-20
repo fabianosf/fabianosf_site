@@ -4,11 +4,11 @@ import { Github, ExternalLink, Code2, BarChart, Database, Bot } from 'lucide-rea
 const Projects = () => {
   const projects = [
     {
-      title: 'Dashboard Analítico Power BI',
-      description: 'Dashboard interativo para análise de dados de vendas e performance empresarial, com KPIs dinâmicos e visualizações avançadas.',
-      technologies: ['Power BI', 'Python', 'SQL', 'ETL'],
-      icon: <BarChart size={32} />,
-      color: 'from-yellow-400 to-orange-500',
+      title: 'Desenvolvimento Web com Django e ReactJS',
+      description: 'Desenvolvimento completo de aplicação web moderna e responsiva, integrando backend robusto em Django com frontend dinâmico em ReactJS. Solução personalizada que une performance, segurança e experiência do usuário excepcional para atender às necessidades específicas do seu negócio.',
+      technologies: ['Django', 'ReactJS', 'PostgreSQL', 'REST API'],
+      icon: <Code2 size={32} />,
+      color: 'from-teal-400 to-blue-500',
       github: '#',
       demo: '#',
     },
@@ -22,18 +22,18 @@ const Projects = () => {
       demo: '#',
     },
     {
-      title: 'Sistema ETL Automatizado',
-      description: 'Pipeline de ETL automatizado para extração, transformação e carga de dados de múltiplas fontes.',
-      technologies: ['Python', 'Pandas', 'SQL', 'Airflow'],
+      title: 'Análise de Dados',
+      description: 'Projeto completo de análise de dados incluindo limpeza e tratamento de informações, extração, transformação e carga de dados (ETL) de múltiplas fontes, proporcionando insights valiosos para tomada de decisão.',
+      technologies: ['Python', 'Pandas', 'SQL'],
       icon: <Database size={32} />,
       color: 'from-blue-400 to-indigo-500',
       github: '#',
       demo: '#',
     },
     {
-      title: 'Modelo Machine Learning',
-      description: 'Modelo preditivo para análise de tendências e previsão de resultados utilizando algoritmos de ML.',
-      technologies: ['Python', 'Scikit-learn', 'TensorFlow', 'Jupyter'],
+      title: 'Machine Learning',
+      description: 'Desenvolvimento preditivo para análise de tendências e previsão de resultados utilizando algoritmos de ML.',
+      technologies: ['Python', 'Scikit-learn', 'Jupyter'],
       icon: <Bot size={32} />,
       color: 'from-purple-400 to-pink-500',
       github: '#',
@@ -52,7 +52,7 @@ const Projects = () => {
             Seleção de projetos que demonstram minhas habilidades em análise de dados e desenvolvimento
           </p>
           <a
-            href="https://github.com/fabiano-freitas"
+            href="https://github.com/fabianosf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-700 font-semibold transition-colors"

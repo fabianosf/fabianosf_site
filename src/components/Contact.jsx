@@ -131,15 +131,15 @@ const Contact = () => {
     {
       icon: <Linkedin size={24} />,
       label: 'LinkedIn',
-      value: '/fabiano-freitas',
-      href: 'https://linkedin.com/in/fabiano-freitas',
+      value: '/fabianosfreitas',
+      href: 'https://www.linkedin.com/in/fabianosfreitas/',
       color: 'from-blue-600 to-blue-700',
     },
     {
       icon: <Github size={24} />,
       label: 'GitHub',
-      value: '/fabiano-freitas',
-      href: 'https://github.com/fabiano-freitas',
+      value: '/fabianosf',
+      href: 'https://github.com/fabianosf',
       color: 'from-gray-700 to-gray-900',
     },
   ]
@@ -294,7 +294,7 @@ const Contact = () => {
                   Enviar Email
                 </a>
                 <a
-                  href="https://linkedin.com/in/fabiano-freitas"
+                  href="https://www.linkedin.com/in/fabianosfreitas/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors"

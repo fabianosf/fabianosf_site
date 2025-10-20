@@ -15,12 +15,12 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: <Github size={20} />,
-      href: 'https://github.com/fabiano-freitas',
+      href: 'https://github.com/fabianosf',
       label: 'GitHub',
     },
     {
       icon: <Linkedin size={20} />,
-      href: 'https://linkedin.com/in/fabiano-freitas',
+      href: 'https://www.linkedin.com/in/fabianosfreitas/',
       label: 'LinkedIn',
     },
     {

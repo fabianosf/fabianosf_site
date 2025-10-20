@@ -5,9 +5,9 @@ const Education = () => {
   const education = [
     {
       type: 'Pós-graduação',
-      title: 'Desenvolvimento Orientado a Objetos em Java',
-      institution: 'Instituição de Ensino',
-      year: '2020',
+      title: 'Desenvolvimento Orientado a Objetos com Java',
+      institution: 'UNESA',
+      year: '2010',
       icon: <GraduationCap size={28} />,
       color: 'from-purple-500 to-indigo-500',
     },
@@ -15,7 +15,7 @@ const Education = () => {
       type: 'Graduação',
       title: 'Rede de Computadores',
       institution: 'UNESA',
-      year: '2018',
+      year: '2008',
       icon: <GraduationCap size={28} />,
       color: 'from-teal-500 to-blue-500',
     },
@@ -23,13 +23,14 @@ const Education = () => {
 
   const certifications = [
     { name: 'MCP – Windows 2000 Professional', issuer: 'Microsoft' },
-    { name: 'Python para Análise de Dados', issuer: 'Plataforma Online' },
-    { name: 'Django Web Framework', issuer: 'Plataforma Online' },
-    { name: 'Machine Learning', issuer: 'Plataforma Online' },
-    { name: 'Power BI - Business Intelligence', issuer: 'Plataforma Online' },
-    { name: 'Spring Boot & Microserviços', issuer: 'Plataforma Online' },
-    { name: 'Docker & Containerização', issuer: 'Plataforma Online' },
-    { name: 'Git & GitHub', issuer: 'Plataforma Online' },
+    { name: 'Python para Análise de Dados', issuer: 'UDEMY' },
+    { name: 'Django Web Framework', issuer: 'UDEMY' },
+    { name: 'Machine Learning', issuer: 'UDEMY' },
+    { name: 'Power BI - Business Intelligence', issuer: 'UDEMY' },
+    { name: 'CSS Avançado', issuer: 'UDEMY' },
+    { name: 'ReactJS', issuer: 'UDEMY' },
+    { name: 'Docker & Containerização', issuer: 'UDEMY' },
+    { name: 'Git & GitHub', issuer: 'UDEMY' },
   ]
 
   return (

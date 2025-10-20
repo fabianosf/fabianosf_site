@@ -23,10 +23,9 @@ const Skills = () => {
       skills: [
         { name: 'Django', level: 90 },
         { name: 'Django REST', level: 85 },
-        { name: 'Flask', level: 80 },
         { name: 'ReactJS', level: 75 },
-        { name: 'Java', level: 80 },
-        { name: 'Spring Boot', level: 75 },
+        { name: 'HTML', level: 80 },
+        { name: 'CSS', level: 75 },
       ],
     },
     {
@@ -48,8 +47,7 @@ const Skills = () => {
         { name: 'Docker', level: 80 },
         { name: 'Git', level: 90 },
         { name: 'PowerShell', level: 85 },
-        { name: 'Eclipse', level: 75 },
-        { name: 'Microserviços', level: 75 },
+        { name: 'VSCode', level: 75 },
       ],
     },
   ]
