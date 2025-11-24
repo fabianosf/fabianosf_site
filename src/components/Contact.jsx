@@ -142,6 +142,15 @@ const Contact = () => {
       href: 'https://github.com/fabianosf',
       color: 'from-gray-700 to-gray-900',
     },
+
+    {
+      icon: <Phone size={24} />,
+      label: 'Phone',
+      value: '(21) 99407-8286',
+      href: 'https://api.whatsapp.com/send/?phone=5521994078286&text=Ol%C3%A1%21+Vi+seu+portf%C3%B3lio+e+gostaria+de+conversar.&type=phone_number&app_absent=0',
+      color: 'from-green-700 to-green-900',
+    },   
+
   ]
 
   return (

@@ -53,7 +53,7 @@ const Projects = () => {
     },
     {
       title: 'Machine Learning',
-      description: 'Desenvolvimento preditivo para análise de tendências e previsão de resultados utilizando algoritmos de ML.',
+      description: 'Desenvolvimento preditivo para análise de tendências e previsão de resultados utilizando algoritmos de ML.',      
       technologies: ['Python', 'Scikit-learn', 'Jupyter'],
       icon: <Bot size={32} />,
       color: 'from-purple-400 to-pink-500',

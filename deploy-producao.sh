@@ -1,0 +1,102 @@
+#!/bin/bash
+
+# Script de deploy para produção
+# Execute: ./deploy-producao.sh
+# Você precisará inserir a senha SSH quando solicitado
+
+VPS_USER="fabianosf"
+VPS_HOST="92.113.33.16"
+VPS_PATH="/var/www/fabianosf_site"
+TEMP_PATH="/home/fabianosf/temp_deploy"
+
+echo "🚀 DEPLOY PARA PRODUÇÃO"
+echo "======================"
+echo ""
+
+# Verificar se dist existe
+if [ ! -d "dist" ]; then
+    echo "📦 Fazendo build..."
+    npm run build
+fi
+
+if [ ! -f "dist/index.html" ]; then
+    echo "❌ index.html não encontrado em dist/"
+    exit 1
+fi
+
+echo "✅ Build completo - Arquivos prontos"
+echo ""
+
+# 1. Criar diretório temporário no servidor
+echo "1️⃣ Criando diretório temporário no servidor..."
+ssh ${VPS_USER}@${VPS_HOST} "rm -rf ${TEMP_PATH} && mkdir -p ${TEMP_PATH}/assets ${TEMP_PATH}/images"
+if [ $? -ne 0 ]; then
+    echo "❌ Erro ao criar diretório temporário"
+    exit 1
+fi
+echo "✅ Diretório temporário criado"
+echo ""
+
+# 2. Enviar TODOS os arquivos para diretório temporário
+echo "2️⃣ Enviando arquivos para o servidor..."
+rsync -avz --progress dist/ ${VPS_USER}@${VPS_HOST}:${TEMP_PATH}/
+if [ $? -ne 0 ]; then
+    echo "❌ Erro ao enviar arquivos"
+    exit 1
+fi
+echo "✅ Arquivos enviados"
+echo ""
+
+# 3. Mover arquivos para /var/www com sudo e ajustar permissões
+echo "3️⃣ Movendo arquivos para produção e ajustando permissões..."
+echo "💡 Você precisará inserir a senha do ROOT agora"
+echo ""
+
+ssh -t ${VPS_USER}@${VPS_HOST} << 'ENDSSH'
+# Criar diretório de destino
+sudo mkdir -p /var/www/fabianosf_site/assets
+sudo mkdir -p /var/www/fabianosf_site/images
+
+# Mover arquivos
+sudo cp -r /home/fabianosf/temp_deploy/* /var/www/fabianosf_site/
+
+# Ajustar permissões
+sudo chown -R www-data:www-data /var/www/fabianosf_site
+sudo chmod -R 755 /var/www/fabianosf_site
+sudo find /var/www/fabianosf_site -type f -exec chmod 644 {} \;
+
+# Limpar diretório temporário
+rm -rf /home/fabianosf/temp_deploy
+
+# Verificar
+echo ""
+echo "======================================"
+echo "✅ VERIFICAÇÃO FINAL:"
+echo "======================================"
+echo ""
+echo "Arquivos em /var/www/fabianosf_site/:"
+ls -la /var/www/fabianosf_site/ | head -10
+echo ""
+if [ -f "/var/www/fabianosf_site/index.html" ]; then
+    echo "✅ index.html EXISTE!"
+    echo "Tamanho: $(du -h /var/www/fabianosf_site/index.html | cut -f1)"
+else
+    echo "❌ index.html NÃO EXISTE!"
+fi
+echo ""
+if [ -f "/var/www/fabianosf_site/images/20161127_153951.jpg" ]; then
+    echo "✅ Foto atualizada EXISTE!"
+    echo "Tamanho: $(du -h /var/www/fabianosf_site/images/20161127_153951.jpg | cut -f1)"
+else
+    echo "⚠️ Foto não encontrada"
+fi
+echo ""
+echo "Arquivos em assets:"
+ls -la /var/www/fabianosf_site/assets/ | head -5
+ENDSSH
+
+echo ""
+echo "🎉 DEPLOY CONCLUÍDO!"
+echo "🌐 Acesse: http://${VPS_HOST} ou http://fabianosf.com"
+echo ""
+
