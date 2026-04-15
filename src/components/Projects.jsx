@@ -1,150 +1,127 @@
-import React from 'react'
-import { Github, ExternalLink, Code2, BarChart, Database, Bot } from 'lucide-react'
-
-// Ícone do Google Drive
-const GoogleDriveIcon = ({ size = 18 }) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M7.71 6.5L1.15 17.5h13.12l6.56-11H7.71z"
-      fill="#0066DA"
-    />
-    <path
-      d="M22.56 17.5L16 6.5H7.71l6.56 11h8.29z"
-      fill="#00AC47"
-    />
-    <path
-      d="M7.71 6.5L1.15 17.5l6.56-11h0z"
-      fill="#EA4335"
-    />
-  </svg>
-)
+import { ExternalLink, MessageCircle } from 'lucide-react'
 
 const Projects = () => {
-  const projects = [
+  const whatsappUrl = `https://wa.me/5521994078286?text=${encodeURIComponent('Olá! Vi seu portfólio e quero um site assim para meu negócio!')}`
+
+  const projetos = [
     {
-      title: 'Desenvolvimento Web com Django e ReactJS',
-      description: 'Desenvolvimento completo de aplicação web moderna e responsiva, integrando backend robusto em Django com frontend dinâmico em ReactJS. Solução personalizada que une performance, segurança e experiência do usuário excepcional para atender às necessidades específicas do seu negócio.',
-      technologies: ['Django', 'ReactJS', 'PostgreSQL', 'REST API'],
-      icon: <Code2 size={32} />,
-      color: 'from-teal-400 to-blue-500',
-      github: 'https://github.com/fabianosf/asbjj_fullstack',      
+      categoria: 'Academia de Jiu-Jitsu',
+      titulo: 'ASBJJ — Rio de Janeiro',
+      resultado: 'Aumento de alunos via contato online',
+      descricao: 'Site completo para academia de artes marciais. Informações sobre aulas, professores, horários e botão direto para WhatsApp. Hoje os interessados entram em contato direto pelo site.',
+      cor: 'from-teal-500 to-blue-600',
+      link: 'https://asbjj.com.br',
+      label: 'asbjj.com.br',
+      icone: '🥋',
     },
     {
-      title: 'API REST com Django',
-      description: 'API RESTful completa para gestão de dados, com autenticação JWT, documentação Swagger e testes automatizados.',
-      technologies: ['Django', 'Django REST', 'PostgreSQL', 'Docker'],
-      icon: <Code2 size={32} />,
-      color: 'from-green-400 to-teal-500',
-      github: 'https://github.com/fabianosf/biblioteca_django',
+      categoria: 'Clínica Médica',
+      titulo: 'Clínica Renata Bastos',
+      resultado: 'Agendamentos direto pelo site',
+      descricao: 'Site profissional para clínica médica com apresentação dos serviços, equipe e facilidade de agendamento. Pacientes encontram a clínica no Google e agendam sem precisar ligar.',
+      cor: 'from-blue-500 to-indigo-600',
+      link: 'https://clinicarenatabastos.com.br',
+      label: 'clinicarenatabastos.com.br',
+      icone: '🏥',
     },
     {
-      title: 'Análise de Dados',
-      description: 'Projeto completo de análise de dados incluindo limpeza e tratamento de informações, extração, transformação e carga de dados (ETL) de múltiplas fontes, proporcionando insights valiosos para tomada de decisão.',
-      technologies: ['Python', 'Pandas', 'SQL'],
-      icon: <Database size={32} />,
-      color: 'from-blue-400 to-indigo-500',
-      github: 'https://drive.google.com/drive/u/0/folders/1Vlz702b_cYtvVpa8zVdTsbY8XIlN4r4v',
+      categoria: 'Empresa de Tecnologia',
+      titulo: 'Traffic Guardian',
+      resultado: 'Geração de leads qualificados',
+      descricao: 'Site institucional focado em captura de leads. Visitantes interessados chegam pelo Google, leem sobre os serviços e entram em contato. Simples, direto e eficiente.',
+      cor: 'from-orange-400 to-red-500',
+      link: 'https://traffic-guardian.com.br',
+      label: 'traffic-guardian.com.br',
+      icone: '🚀',
     },
     {
-      title: 'Machine Learning',
-      description: 'Desenvolvimento preditivo para análise de tendências e previsão de resultados utilizando algoritmos de ML.',      
-      technologies: ['Python', 'Scikit-learn', 'Jupyter'],
-      icon: <Bot size={32} />,
-      color: 'from-purple-400 to-pink-500',
-      github: 'https://drive.google.com/drive/u/0/folders/1BuhVkCw2TWz_HYK4z_6SLO8ZlSQ5PM6l',
+      categoria: 'Plataforma Web',
+      titulo: 'Walennam',
+      resultado: 'Sistema completo com área do cliente',
+      descricao: 'Plataforma web com área de login, painel de controle e gestão de dados. Prova de que além de sites institucionais, também entrego sistemas completos para seu negócio.',
+      cor: 'from-purple-400 to-pink-500',
+      link: 'https://walennam.com.br',
+      label: 'walennam.com.br',
+      icone: '💻',
     },
-
-
     {
-      title: 'Desenvolvimento Web com ReactJS e Firebase',
-      description: 'Desenvolvimento completo de aplicação web moderna e responsiva, integrando o backend com Firebase com frontend dinâmico em ReactJS. Solução personalizada que une performance, segurança e experiência do usuário excepcional para atender às necessidades específicas do seu negócio',
-      technologies: ['ReactJS', 'Firebase'],
-      icon: <Code2 size={32} />,
-      color: 'from-teal-400 to-blue-500',
-      github: 'https://walennam.com.br/',
-    },  
-
-    {
-      title: 'Machine Learning',
-      description: 'Desenvolvimento preditivo para análise de tendências e previsão de resultados utilizando algoritmos de ML.',
-      technologies: ['Python', 'Scikit-learn', 'Jupyter'],
-      icon: <Bot size={32} />,
-      color: 'from-purple-400 to-pink-500',
-      github:'https://drive.google.com/drive/u/0/folders/19tWEA8IuF9Syc4nfAhCvXA3qEx74MC-t',
+      categoria: 'Geração de Leads',
+      titulo: 'Lead House',
+      resultado: 'Captação de leads qualificados',
+      descricao: 'Site focado em captura e qualificação de leads para empresas. Layout persuasivo com formulários estratégicos que convertem visitantes em contatos prontos para comprar.',
+      cor: 'from-yellow-400 to-orange-500',
+      link: 'https://leadhouse.com.br',
+      label: 'leadhouse.com.br',
+      icone: '🏠',
     },
-
-
   ]
 
   return (
-    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            Projetos <span className="text-teal-600">&</span> Portfólio
+        <div className="text-center mb-14">
+          <span className="inline-block px-4 py-1 bg-teal-100 text-teal-700 rounded-full text-sm font-bold mb-4 uppercase tracking-wide">
+            Portfólio real
+          </span>
+          {/* H2 — palavra-chave: criação de sites para empresas */}
+          <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
+            Sites que já estão{' '}
+            <span className="text-teal-600">gerando resultado</span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            Seleção de projetos que demonstram minhas habilidades em análise de dados e desenvolvimento
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Esses são projetos reais. Sites que foram criados, estão no ar e hoje trazem clientes para esses negócios todos os dias.
           </p>
-          <a
-            href="https://github.com/fabianosf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-700 font-semibold transition-colors"
-          >
-            <Github size={24} />
-            Ver todos os projetos no GitHub
-            <ExternalLink size={18} />
-          </a>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {projects.map((project, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+          {projetos.map((p, i) => (
             <div
-              key={index}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
+              key={i}
+              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col"
             >
-              <div className={`h-2 bg-gradient-to-r ${project.color}`}></div>
-              
-              <div className="p-8">
-                <div className={`inline-block p-4 rounded-xl bg-gradient-to-br ${project.color} text-white mb-4`}>
-                  {project.icon}
+              {/* Cabeçalho colorido */}
+              <div className={`bg-gradient-to-r ${p.cor} p-6 text-white`}>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-3xl">{p.icone}</span>
+                  <span className="text-xs font-bold uppercase tracking-wider bg-white/20 px-3 py-1 rounded-full">
+                    {p.categoria}
+                  </span>
                 </div>
+                <h3 className="text-xl font-black">{p.titulo}</h3>
+                <p className="text-white/80 text-sm mt-1">✅ {p.resultado}</p>
+              </div>
 
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">{project.title}</h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">{project.description}</p>
+              <div className="p-6 flex flex-col flex-1">
+                <p className="text-gray-600 text-sm leading-relaxed mb-5 flex-1">{p.descricao}</p>
 
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.technologies.map((tech, idx) => (
-                    <span
-                      key={idx}
-                      className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="flex gap-4">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors font-medium"
-                  >
-                    {project.title === 'Machine Learning' || project.github.includes('drive.google.com') ? <GoogleDriveIcon size={18} /> : <Github size={18} />}
-                    Código
-                  </a>
-                </div>
+                <a
+                  href={p.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r ${p.cor} hover:opacity-90 transition-opacity`}
+                >
+                  <ExternalLink size={15} />
+                  Ver site: {p.label}
+                </a>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* CTA de portfólio */}
+        <div className="text-center">
+          <p className="text-gray-600 mb-5 text-lg">
+            Seu negócio pode ser o próximo. <strong>Academia, clínica, loja, escritório</strong> — qualquer segmento.
+          </p>
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-green-500 hover:bg-green-400 text-white rounded-xl font-black text-lg shadow-lg shadow-green-500/20 transform hover:scale-105 transition-all"
+          >
+            <MessageCircle size={22} />
+            Quero um site assim para meu negócio
+          </a>
         </div>
       </div>
     </section>

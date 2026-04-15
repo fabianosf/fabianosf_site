@@ -1,31 +1,30 @@
-import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
-import Hero from './components/Hero'
-import Skills from './components/Skills'
-import Experience from './components/Experience'
-import Education from './components/Education'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
+import Home from './pages/Home'
+import CriacaoDeSites from './pages/CriacaoDeSites'
+import SiteParaAcademia from './pages/SiteParaAcademia'
+import SiteParaClinica from './pages/SiteParaClinica'
 
 function App() {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <main>
-        <Hero />
-        <Skills />
-        <Experience />
-        <Education />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-      <WhatsAppButton />
-    </div>
+    <BrowserRouter>
+      <div className="min-h-screen">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/criacao-de-sites" element={<CriacaoDeSites />} />
+            <Route path="/site-para-academia" element={<SiteParaAcademia />} />
+            <Route path="/site-para-clinica" element={<SiteParaClinica />} />
+          </Routes>
+        </main>
+        <Footer />
+        <WhatsAppButton />
+      </div>
+    </BrowserRouter>
   )
 }
 
 export default App
-
