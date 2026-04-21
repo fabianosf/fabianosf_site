@@ -5,60 +5,60 @@ const Precos = () => {
 
   const planos = [
     {
-      nome: 'Landing Page',
+      nome: 'Página de Captação',
       badge: null,
-      tagline: 'Para quem quer começar rápido',
+      tagline: 'Para quem quer começar rápido e direto',
       preco: 'R$ 800',
-      descricao: 'Uma página focada em um único objetivo: fazer o visitante entrar em contato com você.',
-      parcelamento: 'ou 2x R$ 400',
+      descricao: 'Uma página focada em um único objetivo: fazer o visitante entrar em contato com você pelo WhatsApp.',
+      parcelamento: 'ou 2x R$ 400 sem juros',
       itens: [
         'Página única de alta conversão',
+        'Design profissional ao seu segmento',
         'Botão WhatsApp estratégico',
-        'Formulário de contato',
         'Aparece no Google (SEO básico)',
         'Rápido no celular',
         'Entrega em até 5 dias',
         '2 rodadas de ajuste',
       ],
-      ideal: 'Ideal para: autônomos, profissionais liberais e pequenos negócios começando.',
+      ideal: 'Ideal para autônomos, profissionais liberais e pequenos negócios começando.',
       cor: 'from-teal-400 to-teal-600',
       destaque: false,
-      msg: 'Olá! Tenho interesse no plano Landing Page (R$800). Como funciona?',
+      msg: 'Oi Fabiano! Tenho interesse na Página de Captação (R$800). Como funciona?',
     },
     {
-      nome: 'Site Completo',
+      nome: 'Site Profissional',
       badge: 'MAIS ESCOLHIDO',
-      tagline: 'Para quem quer se destacar',
+      tagline: 'Para quem quer se posicionar acima da concorrência',
       preco: 'R$ 1.500',
       descricao: 'Site completo com várias páginas, apresentando seus serviços, sua história e tudo que você precisa para vender mais.',
-      parcelamento: 'ou 3x R$ 500',
+      parcelamento: 'ou 3x R$ 500 sem juros',
       itens: [
         'Site com até 5 páginas',
-        'Design exclusivo e profissional',
-        'Botão WhatsApp em todas as páginas',
+        'Design exclusivo para o seu negócio',
+        'WhatsApp em todas as páginas',
         'Galeria de fotos e vídeos',
-        'SEO avançado para Google',
+        'SEO avançado para o Google',
         'Blog (opcional)',
         'Rápido no celular',
         'Entrega em até 7 dias',
         '3 rodadas de ajuste',
         '30 dias de suporte gratuito',
       ],
-      ideal: 'Ideal para: academias, clínicas, imobiliárias, restaurantes e empresas.',
+      ideal: 'Ideal para academias, clínicas, empresas e autônomos que querem se destacar.',
       cor: 'from-blue-500 to-indigo-600',
       destaque: true,
-      msg: 'Olá! Tenho interesse no plano Site Completo (R$1.500). Como funciona?',
+      msg: 'Oi Fabiano! Tenho interesse no Site Profissional (R$1.500). Como funciona?',
     },
     {
-      nome: 'Presença Digital Completa',
+      nome: 'Clientes Todo Dia',
       badge: null,
-      tagline: 'Para quem quer crescer de verdade',
+      tagline: 'Para quem quer escalar de verdade',
       preco: 'R$ 2.500+',
-      descricao: 'Site profissional + gestão de tráfego pago no Meta/Google Ads. A combinação que enche o WhatsApp de clientes todo dia.',
-      parcelamento: 'Parcelamento a combinar',
+      descricao: 'Site profissional + gestão de tráfego pago. A combinação que enche o WhatsApp de cliente desde a primeira semana.',
+      parcelamento: 'Condições a combinar',
       itens: [
-        'Tudo do plano Site Completo',
-        'Criação de campanhas no Meta Ads',
+        'Tudo do Site Profissional',
+        'Criação de campanhas Meta Ads',
         'Anúncios no Facebook e Instagram',
         'Segmentação do público ideal',
         'Google Ads (opcional)',
@@ -66,10 +66,10 @@ const Precos = () => {
         'Otimização contínua das campanhas',
         'Suporte direto via WhatsApp',
       ],
-      ideal: 'Ideal para: clínicas, academias, salões, lojas e quem quer escalar rápido.',
+      ideal: 'Ideal para clínicas, academias, salões e quem quer resultado desde a semana 1.',
       cor: 'from-purple-500 to-pink-600',
       destaque: false,
-      msg: 'Olá! Tenho interesse no plano Presença Digital Completa (site + tráfego pago). Como funciona?',
+      msg: 'Oi Fabiano! Tenho interesse no pacote Clientes Todo Dia (site + tráfego pago). Como funciona?',
     },
   ]
 
@@ -80,20 +80,20 @@ const Precos = () => {
           <span className="inline-block px-4 py-1 bg-teal-500/20 border border-teal-500/30 text-teal-300 rounded-full text-sm font-bold mb-4 uppercase tracking-wide">
             Investimento
           </span>
-          {/* H2 — palavra-chave: criação de sites profissionais + preço */}
           <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
-            Criação de site profissional{' '}
+            Quanto custa ter um site que trabalha{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-green-400">
-              a partir de R$ 800
+              por você 24 horas por dia?
             </span>
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-4">
-            Preço justo, sem surpresas e sem taxas escondidas. Você sabe exatamente o que vai receber antes de fechar.
+            Preço justo, sem surpresas e sem taxas escondidas.
+            Você sabe exatamente o que vai receber antes de fechar.
           </p>
-          {/* Âncora de valor */}
-          <div className="inline-flex items-center gap-3 bg-white/10 border border-white/20 rounded-full px-6 py-2 text-sm text-gray-300">
-            <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-            Menos do que 1 mês de anúncio no Instagram — e funciona para sempre
+          {/* Ancoragem de valor */}
+          <div className="inline-flex items-center gap-3 bg-white/10 border border-white/20 rounded-full px-6 py-2.5 text-sm text-gray-300 max-w-full text-center">
+            <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse flex-shrink-0"></span>
+            Um funcionário meio período custa mais de R$800 por mês — seu site trabalha 24h por dia, para sempre.
           </div>
         </div>
 
@@ -158,7 +158,7 @@ const Precos = () => {
           <p className="text-gray-400 text-sm">
             Não sabe qual escolher?{' '}
             <a
-              href={whatsappUrl('Olá! Preciso de ajuda para escolher o melhor plano para meu negócio.')}
+              href={whatsappUrl('Oi Fabiano! Preciso de ajuda para escolher o melhor plano para meu negócio.')}
               target="_blank"
               rel="noopener noreferrer"
               className="text-teal-400 hover:text-teal-300 underline font-semibold"
