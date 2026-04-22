@@ -1,12 +1,12 @@
 import useSEO from '../utils/useSEO'
 import Hero from '../components/Hero'
 import Problema from '../components/Problema'
+import ProvasSocial from '../components/ProvasSocial'
 import Servicos from '../components/Servicos'
 import Beneficios from '../components/Beneficios'
 import ComoFunciona from '../components/ComoFunciona'
 import VideoApresentacao from '../components/VideoApresentacao'
 import ParaQuemE from '../components/ParaQuemE'
-import ProvasSocial from '../components/ProvasSocial'
 import Projects from '../components/Projects'
 import QuemSou from '../components/QuemSou'
 import Precos from '../components/Precos'
@@ -23,33 +23,33 @@ const Home = () => {
 
   return (
     <>
-      {/* 1. Hero — resultado + quem sou em uma linha */}
+      {/* 1. Hero */}
       <Hero />
-      {/* 2. Problema — identificação com a dor antes da solução */}
+      {/* 2. Problema — dor antes da solução */}
       <Problema />
-      {/* 3. Solução — o que eu faço e como funciona */}
-      <Servicos />
-      {/* 4. Benefícios — o que muda na prática */}
-      <Beneficios />
-      {/* 5. Como Funciona — 4 passos, baixa fricção */}
-      <ComoFunciona />
-      {/* 6. Vídeo — humanização e confiança no momento certo */}
-      <VideoApresentacao />
-      {/* 7. Para Quem É — confirmação de segmento */}
-      <ParaQuemE />
-      {/* 8. Prova Social — depoimentos em destaque próprio */}
+      {/* 3. Prova Social — logo após a dor, visitante vê resultado antes da solução */}
       <ProvasSocial />
-      {/* 9. Portfólio — sites reais com links funcionais */}
+      {/* 4. Solução — o que eu faço */}
+      <Servicos />
+      {/* 5. Benefícios — o que muda na prática */}
+      <Beneficios />
+      {/* 6. Como Funciona — 4 passos */}
+      <ComoFunciona />
+      {/* 7. Vídeo — humanização no momento certo: racional ok, falta confiança */}
+      <VideoApresentacao />
+      {/* 8. Para Quem É — confirmação de segmento */}
+      <ParaQuemE />
+      {/* 9. Portfólio */}
       <Projects />
       {/* 10. Quem Sou — autoridade após a prova */}
       <QuemSou />
-      {/* 11. Preços — oferta clara com ancoragem de valor */}
+      {/* 11. Preços */}
       <Precos />
-      {/* 12. FAQ — remove objeções logo após o preço */}
+      {/* 12. FAQ — remove objeções logo após preço */}
       <FAQ />
-      {/* 13. CTA Final — urgência e ação */}
+      {/* 13. CTA Final */}
       <CTAFinal />
-      {/* 14. Contato — WhatsApp como principal */}
+      {/* 14. Contato */}
       <Contact />
     </>
   )

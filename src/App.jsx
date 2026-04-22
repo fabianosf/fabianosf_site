@@ -6,6 +6,8 @@ import Home from './pages/Home'
 import CriacaoDeSites from './pages/CriacaoDeSites'
 import SiteParaAcademia from './pages/SiteParaAcademia'
 import SiteParaClinica from './pages/SiteParaClinica'
+import ServicosPage from './pages/ServicosPage'
+import PrecosPage from './pages/PrecosPage'
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/servicos" element={<ServicosPage />} />
+            <Route path="/precos" element={<PrecosPage />} />
             <Route path="/criacao-de-sites" element={<CriacaoDeSites />} />
             <Route path="/site-para-academia" element={<SiteParaAcademia />} />
             <Route path="/site-para-clinica" element={<SiteParaClinica />} />

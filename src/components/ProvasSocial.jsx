@@ -30,6 +30,15 @@ const ProvasSocial = () => {
     },
   ]
 
+  const nichos = [
+    { segmento: 'Academia', resultado: '11 novos alunos em 23 dias', cor: 'bg-orange-50 border-orange-200 text-orange-700' },
+    { segmento: 'Clínica médica', resultado: 'Agenda lotada em 60 dias', cor: 'bg-blue-50 border-blue-200 text-blue-700' },
+    { segmento: 'Imobiliária', resultado: 'Escolheu pela estratégia, não pelo preço', cor: 'bg-teal-50 border-teal-200 text-teal-700' },
+    { segmento: 'Autônomo', resultado: 'Primeiro cliente via Google em 2 semanas', cor: 'bg-purple-50 border-purple-200 text-purple-700' },
+    { segmento: 'Empresa de tecnologia', resultado: 'Leads qualificados todo mês', cor: 'bg-indigo-50 border-indigo-200 text-indigo-700' },
+    { segmento: 'Plataforma web', resultado: 'Sistema completo com área do cliente', cor: 'bg-green-50 border-green-200 text-green-700' },
+  ]
+
   return (
     <section id="depoimentos" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="container mx-auto max-w-5xl">
@@ -47,6 +56,7 @@ const ProvasSocial = () => {
           </p>
         </div>
 
+        {/* Depoimentos */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {depoimentos.map((d, i) => (
             <div key={i} className={`bg-white rounded-2xl shadow-md p-6 border-l-4 ${d.cor} hover:shadow-xl transition-all duration-300 flex flex-col`}>
@@ -63,7 +73,22 @@ const ProvasSocial = () => {
           ))}
         </div>
 
-        {/* Números de credibilidade */}
+        {/* Nichos com resultado */}
+        <div className="mb-12">
+          <p className="text-center text-sm font-bold text-gray-500 uppercase tracking-widest mb-5">
+            Segmentos atendidos e resultados
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            {nichos.map((n, i) => (
+              <div key={i} className={`rounded-xl p-4 border ${n.cor} flex flex-col gap-1`}>
+                <p className="font-black text-sm">{n.segmento}</p>
+                <p className="text-xs leading-snug opacity-80">→ {n.resultado}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Números */}
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 grid grid-cols-3 gap-6 max-w-2xl mx-auto mb-10 text-center">
           <div>
             <p className="text-4xl font-black text-green-500">50+</p>

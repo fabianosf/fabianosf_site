@@ -23,9 +23,9 @@ const VideoApresentacao = () => {
             Quem está por trás disso tudo
           </span>
           <h2 className="text-3xl sm:text-4xl font-black text-white mb-3 leading-tight">
-            Deixa eu te explicar em 2 minutos{' '}
+            Antes de clicar em qualquer botão,{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-green-400">
-              o que faço e como posso ajudar o seu negócio.
+              deixa eu te explicar em 2 minutos.
             </span>
           </h2>
           <p className="text-gray-400 text-base max-w-xl mx-auto">
@@ -33,12 +33,15 @@ const VideoApresentacao = () => {
           </p>
         </div>
 
-        {/* Player com thumbnail e overlay de play */}
-        <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/40 bg-black aspect-video mb-8 group cursor-pointer" onClick={handlePlay}>
+        {/* Player */}
+        <div
+          className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/40 bg-black mb-8 group cursor-pointer"
+          onClick={handlePlay}
+        >
           <video
             ref={videoRef}
             src="/videos/video2.mp4"
-            className="w-full h-full object-cover"
+            className="w-full block"
             controls={playing}
             playsInline
             preload="metadata"
@@ -56,10 +59,12 @@ const VideoApresentacao = () => {
 
         {/* Texto abaixo do vídeo */}
         <div className="text-center">
-          <p className="text-gray-300 text-base mb-6 max-w-xl mx-auto leading-relaxed">
-            Depois de assistir, se fizer sentido para você,
-            é só clicar no botão abaixo — te respondo em minutos.
-            <span className="text-gray-400"> Sem pressão. Sem proposta. Só uma conversa direta.</span>
+          <p className="text-gray-300 text-base mb-2 max-w-xl mx-auto leading-relaxed">
+            Se o que eu falei faz sentido para o seu negócio,
+            é só clicar no botão abaixo — te respondo em até 15 minutos.
+          </p>
+          <p className="text-gray-500 text-sm mb-7 max-w-xl mx-auto">
+            Sem proposta. Sem pressão. Só uma conversa direta sobre o que você precisa.
           </p>
           <a
             href={whatsappUrl}

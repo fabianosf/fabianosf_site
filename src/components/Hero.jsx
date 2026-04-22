@@ -19,41 +19,47 @@ const Hero = () => {
             {/* Badge de nicho */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-500/20 border border-teal-500/30 rounded-full text-teal-300 text-sm font-semibold mb-6">
               <Monitor size={14} className="flex-shrink-0" />
-              <span>Sites profissionais para negócios locais</span>
+              <span>Sites e anúncios para negócios locais</span>
             </div>
 
             {/* H1 */}
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-5 leading-[1.05]">
-              Seu negócio{' '}
+              Site profissional{' '}
+              <br className="hidden sm:block" />
+              e anúncios certeiros:{' '}
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-green-400">
-                recebendo clientes
+                seu WhatsApp cheio
               </span>
               <br />
-              pelo WhatsApp todo dia.
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400">
+                sem depender de indicação.
+              </span>
             </h1>
 
             {/* Subtítulo */}
             <p className="text-lg sm:text-xl text-gray-300 mb-3 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Crio sites para negócios locais que querem parar de depender só de indicação
-              e começar a receber cliente direto pelo WhatsApp —{' '}
-              <span className="text-white font-semibold">sem precisar postar todo dia no Instagram
-              nem entender nada de tecnologia.</span>
+              Crio sites rápidos e profissionais para clínicas, academias e autônomos —
+              com botão direto pro WhatsApp. E para quem quer resultado mais rápido,
+              também gerencio os anúncios.{' '}
+              <span className="text-white font-semibold">
+                Você cuida do negócio. Eu cuido de trazer o cliente.
+              </span>
             </p>
 
-            {/* Pills de serviço */}
+            {/* Pills — hierarquia visual: site → upgrade tráfego → resultado */}
             <div className="flex flex-wrap gap-3 justify-center lg:justify-start mb-8 mt-6">
-              <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 rounded-full text-white text-sm font-semibold">
+              <span className="inline-flex items-center gap-2 px-4 py-2 bg-teal-500/20 border border-teal-500/40 rounded-full text-teal-300 text-sm font-semibold">
                 <Monitor size={13} className="text-teal-400" />
                 Site profissional
               </span>
-              <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 rounded-full text-white text-sm font-semibold">
+              <span className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 border border-blue-500/40 rounded-full text-blue-300 text-sm font-semibold">
                 <TrendingUp size={13} className="text-blue-400" />
-                Tráfego pago
+                + Tráfego pago
               </span>
-              <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 rounded-full text-white text-sm font-semibold">
+              <span className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 border border-green-500/40 rounded-full text-green-300 text-sm font-semibold">
                 <MessageCircle size={13} className="text-green-400" />
-                Clientes no WhatsApp
+                → Clientes no WhatsApp
               </span>
             </div>
 
@@ -66,7 +72,7 @@ const Hero = () => {
                 className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-green-500 hover:bg-green-400 text-white rounded-xl font-black text-lg shadow-2xl shadow-green-500/30 transform hover:scale-105 transition-all duration-200"
               >
                 <MessageCircle size={22} />
-                Falar com o Fabiano — é grátis
+                Falar com o Fabiano agora — é grátis
               </a>
               <a
                 href="#portfolio"
@@ -99,7 +105,7 @@ const Hero = () => {
               <div className="relative w-56 h-56 sm:w-72 sm:h-72 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
                 <img
                   src="/images/20161127_153951.jpg"
-                  alt="Fabiano Freitas - Especialista em criação de sites para negócios locais"
+                  alt="Fabiano Freitas - Especialista em criação de sites e tráfego pago para negócios locais"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.src = 'https://via.placeholder.com/400x400/0f766e/ffffff?text=FF'
@@ -110,7 +116,7 @@ const Hero = () => {
 
             <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-white text-center max-w-xs w-full">
               <p className="text-xl font-black text-white mb-0.5">Fabiano Freitas</p>
-              <p className="text-teal-300 text-sm font-medium mb-4">Criação de Sites · Rio de Janeiro</p>
+              <p className="text-teal-300 text-sm font-medium mb-4">Sites + Tráfego Pago · Rio de Janeiro</p>
               <div className="grid grid-cols-3 gap-3 border-t border-white/10 pt-4">
                 <div>
                   <p className="text-3xl font-black text-green-400">50+</p>
