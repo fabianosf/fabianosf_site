@@ -1,7 +1,8 @@
 import { ExternalLink, MessageCircle } from 'lucide-react'
+import { wa, MSG } from '../config/whatsapp'
 
 const Projects = () => {
-  const whatsappUrl = `https://wa.me/5521994078286?text=${encodeURIComponent('Olá! Vi seu portfólio e quero um site assim para meu negócio!')}`
+  const whatsappUrl = wa(MSG.projetos)
 
   const projetos = [
     {

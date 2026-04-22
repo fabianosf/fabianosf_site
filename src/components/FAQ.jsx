@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { ChevronDown, MessageCircle } from 'lucide-react'
+import { wa, MSG } from '../config/whatsapp'
 
 const FAQ = () => {
   const [aberto, setAberto] = useState(null)
 
-  const whatsappUrl = `https://wa.me/5521994078286?text=${encodeURIComponent('Oi Fabiano! Ainda tenho algumas dúvidas antes de decidir. Podemos conversar?')}`
+  const whatsappUrl = wa(MSG.faq)
 
   const perguntas = [
     {

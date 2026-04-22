@@ -1,6 +1,7 @@
 import { MessageCircle, CheckCircle, ArrowRight, Calendar, ShieldCheck, Star, Users } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import useSEO from '../utils/useSEO'
+import { wa, MSG } from '../config/whatsapp'
 
 const SiteParaClinica = () => {
   useSEO({
@@ -9,7 +10,7 @@ const SiteParaClinica = () => {
     canonical: 'https://fabianosf.com/site-para-clinica',
   })
 
-  const whatsapp = `https://wa.me/5521994078286?text=${encodeURIComponent('Olá! Quero um site profissional para minha clínica/consultório. Pode me ajudar?')}`
+  const whatsapp = wa(MSG.clinica)
 
   const dores = [
     'Pacientes pesquisam online antes de agendar — e encontram outra clínica',

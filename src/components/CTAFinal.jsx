@@ -1,7 +1,8 @@
 import { MessageCircle, CheckCircle } from 'lucide-react'
+import { wa, MSG } from '../config/whatsapp'
 
 const CTAFinal = () => {
-  const whatsappUrl = `https://wa.me/5521994078286?text=${encodeURIComponent('Oi Fabiano! Quero mais clientes para meu negócio. Pode me ajudar?')}`
+  const whatsappUrl = wa(MSG.ctaFinal)
 
   return (
     <section id="cta-final" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">

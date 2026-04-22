@@ -1,7 +1,8 @@
 import { MessageCircle, Mail, Linkedin, CheckCircle } from 'lucide-react'
+import { wa, MSG } from '../config/whatsapp'
 
 const Contact = () => {
-  const whatsappUrl = `https://wa.me/5521994078286?text=${encodeURIComponent('Oi Fabiano! Gostaria de um orçamento para um site. Pode me ajudar?')}`
+  const whatsappUrl = wa(MSG.contato)
 
   return (
     <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">

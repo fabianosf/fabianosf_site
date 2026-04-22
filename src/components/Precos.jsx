@@ -1,8 +1,7 @@
 import { Check, MessageCircle, Star, Zap } from 'lucide-react'
+import { wa, MSG } from '../config/whatsapp'
 
 const Precos = () => {
-  const whatsappUrl = (msg) => `https://wa.me/5521994078286?text=${encodeURIComponent(msg)}`
-
   const planos = [
     {
       nome: 'Página de Captação',
@@ -23,7 +22,7 @@ const Precos = () => {
       ideal: 'Ideal para autônomos, profissionais liberais e pequenos negócios começando.',
       cor: 'from-teal-400 to-teal-600',
       destaque: false,
-      msg: 'Oi Fabiano! Tenho interesse na Página de Captação (R$800). Como funciona?',
+      msg: MSG.planos.captacao,
     },
     {
       nome: 'Site Profissional',
@@ -47,7 +46,7 @@ const Precos = () => {
       ideal: 'Ideal para academias, clínicas, empresas e autônomos que querem se destacar.',
       cor: 'from-blue-500 to-indigo-600',
       destaque: true,
-      msg: 'Oi Fabiano! Tenho interesse no Site Profissional (R$1.500). Como funciona?',
+      msg: MSG.planos.profissional,
     },
     {
       nome: 'Clientes Todo Dia',
@@ -69,7 +68,7 @@ const Precos = () => {
       ideal: 'Ideal para clínicas, academias, salões e quem quer resultado desde a semana 1.',
       cor: 'from-purple-500 to-pink-600',
       destaque: false,
-      msg: 'Oi Fabiano! Tenho interesse no pacote Clientes Todo Dia (site + tráfego pago). Como funciona?',
+      msg: MSG.planos.clientesTodoDia,
     },
   ]
 
@@ -141,7 +140,7 @@ const Precos = () => {
                 <p className="text-xs text-teal-400/80 italic mb-5">{plano.ideal}</p>
 
                 <a
-                  href={whatsappUrl(plano.msg)}
+                  href={wa(plano.msg)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-black text-white bg-gradient-to-r ${plano.cor} hover:opacity-90 transition-opacity`}
@@ -158,7 +157,7 @@ const Precos = () => {
           <p className="text-gray-400 text-sm">
             Não sabe qual escolher?{' '}
             <a
-              href={whatsappUrl('Oi Fabiano! Preciso de ajuda para escolher o melhor plano para meu negócio.')}
+              href={wa(MSG.planos.duvida)}
               target="_blank"
               rel="noopener noreferrer"
               className="text-teal-400 hover:text-teal-300 underline font-semibold"

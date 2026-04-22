@@ -1,16 +1,17 @@
 import { MessageCircle, Mail, Linkedin, Heart } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { wa, MSG } from '../config/whatsapp'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
-  const whatsappUrl = `https://wa.me/5521994078286?text=${encodeURIComponent('Olá! Quero um site profissional. Pode me ajudar?')}`
+  const whatsappUrl = wa(MSG.footer)
 
   const menuLinks = [
     { label: 'Benefícios', href: '/#beneficios' },
     { label: 'Serviços', href: '/#servicos' },
-    { label: 'Portfólio', href: '/#portfolio' },
-    { label: 'Preços', href: '/#precos' },
-    { label: 'Contato', href: '/#contact' },
+    { label: 'Portfólio', href: '/portfolio' },
+    { label: 'Preços', href: '/precos' },
+    { label: 'Contato', href: '/contact' },
   ]
 
   // Links internos SEO — indexáveis pelo Google
@@ -74,13 +75,13 @@ const Footer = () => {
                 </li>
               ))}
               <li>
-                <a href="/#servicos" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">
-                  E-commerce
+                <a href="/servicos" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">
+                  Tráfego Pago
                 </a>
               </li>
               <li>
-                <a href="/#servicos" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">
-                  Sistema Web
+                <a href="/servicos" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">
+                  Site + Anúncios
                 </a>
               </li>
             </ul>

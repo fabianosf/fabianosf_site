@@ -1,7 +1,8 @@
 import { MessageCircle, Award, Clock, ThumbsUp } from 'lucide-react'
+import { wa, MSG } from '../config/whatsapp'
 
 const QuemSou = () => {
-  const whatsappUrl = `https://wa.me/5521994078286?text=${encodeURIComponent('Olá Fabiano! Vi seu site e quero saber mais sobre criação de sites.')}`
+  const whatsappUrl = wa(MSG.quemSou)
 
   const numeros = [
     { valor: '50+', label: 'Sites entregues', icon: <Award size={20} />, cor: 'text-teal-400' },

@@ -1,11 +1,12 @@
 import { useState, useRef } from 'react'
 import { MessageCircle, Play } from 'lucide-react'
+import { wa, MSG } from '../config/whatsapp'
 
 const VideoApresentacao = () => {
   const [playing, setPlaying] = useState(false)
   const videoRef = useRef(null)
 
-  const whatsappUrl = `https://wa.me/5521994078286?text=${encodeURIComponent('Oi Fabiano! Vi seu vídeo no site e quero entender como isso pode funcionar para o meu negócio.')}`
+  const whatsappUrl = wa(MSG.video)
 
   const handlePlay = () => {
     setPlaying(true)

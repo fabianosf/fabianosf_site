@@ -1,7 +1,8 @@
 import { MessageCircle, Quote } from 'lucide-react'
+import { wa, MSG } from '../config/whatsapp'
 
 const ProvasSocial = () => {
-  const whatsappUrl = `https://wa.me/5521994078286?text=${encodeURIComponent('Oi Fabiano! Vi os resultados dos seus clientes e quero resultado igual para o meu negócio.')}`
+  const whatsappUrl = wa(MSG.provasSocial)
 
   const depoimentos = [
     {

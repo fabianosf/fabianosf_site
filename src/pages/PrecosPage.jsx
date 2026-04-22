@@ -3,6 +3,7 @@ import useSEO from '../utils/useSEO'
 import Precos from '../components/Precos'
 import FAQ from '../components/FAQ'
 import { MessageCircle, ArrowLeft } from 'lucide-react'
+import { wa, MSG } from '../config/whatsapp'
 
 const PrecosPage = () => {
   useSEO({
@@ -11,7 +12,7 @@ const PrecosPage = () => {
     canonical: 'https://fabianosf.com/precos',
   })
 
-  const whatsappUrl = `https://wa.me/5521994078286?text=${encodeURIComponent('Oi Fabiano! Vi a página de preços e quero entender qual plano é certo para o meu negócio.')}`
+  const whatsappUrl = wa(MSG.precosPage)
 
   return (
     <>

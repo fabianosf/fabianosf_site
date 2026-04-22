@@ -4,6 +4,7 @@ import Servicos from '../components/Servicos'
 import ParaQuemE from '../components/ParaQuemE'
 import ComoFunciona from '../components/ComoFunciona'
 import { MessageCircle, ArrowLeft } from 'lucide-react'
+import { wa, MSG } from '../config/whatsapp'
 
 const ServicosPage = () => {
   useSEO({
@@ -12,7 +13,7 @@ const ServicosPage = () => {
     canonical: 'https://fabianosf.com/servicos',
   })
 
-  const whatsappUrl = `https://wa.me/5521994078286?text=${encodeURIComponent('Oi Fabiano! Vi a página de serviços e quero entender o que faz sentido para o meu negócio.')}`
+  const whatsappUrl = wa(MSG.servicosPage)
 
   return (
     <>

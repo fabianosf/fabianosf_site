@@ -1,7 +1,8 @@
 import { MessageCircle, ArrowDown, Monitor, TrendingUp, Check } from 'lucide-react'
+import { wa, MSG } from '../config/whatsapp'
 
 const Hero = () => {
-  const whatsappUrl = `https://wa.me/5521994078286?text=${encodeURIComponent('Oi Fabiano! Vi seu site e quero entender como você pode me ajudar a receber mais clientes no meu negócio.')}`
+  const whatsappUrl = wa(MSG.hero)
 
   return (
     <section id="hero" className="min-h-screen flex items-center pt-20 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-teal-900 to-gray-900 relative overflow-hidden">
@@ -75,7 +76,7 @@ const Hero = () => {
                 Falar com o Fabiano agora — é grátis
               </a>
               <a
-                href="#portfolio"
+                href="/portfolio"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/30 text-white hover:bg-white/10 rounded-xl font-bold text-base transition-all duration-200"
               >
                 Ver sites que já funcionam

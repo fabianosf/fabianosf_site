@@ -1,7 +1,8 @@
 import { MessageCircle, Search, Monitor, TrendingUp, ArrowRight } from 'lucide-react'
+import { wa, MSG } from '../config/whatsapp'
 
 const ComoFunciona = () => {
-  const whatsappUrl = `https://wa.me/5521994078286?text=${encodeURIComponent('Olá! Quero um site profissional que traga clientes. Pode me ajudar?')}`
+  const whatsappUrl = wa(MSG.comoFunciona)
 
   const passos = [
     {

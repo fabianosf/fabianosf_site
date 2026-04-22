@@ -1,6 +1,7 @@
 import { MessageCircle, CheckCircle, ArrowRight, Users, Calendar, Star, TrendingUp } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import useSEO from '../utils/useSEO'
+import { wa, MSG } from '../config/whatsapp'
 
 const SiteParaAcademia = () => {
   useSEO({
@@ -9,7 +10,7 @@ const SiteParaAcademia = () => {
     canonical: 'https://fabianosf.com/site-para-academia',
   })
 
-  const whatsapp = `https://wa.me/5521994078286?text=${encodeURIComponent('Olá! Quero um site profissional para minha academia. Pode me ajudar?')}`
+  const whatsapp = wa(MSG.academia)
 
   const dores = [
     'Alunos em potencial pesquisam no Google e encontram o concorrente, não você',

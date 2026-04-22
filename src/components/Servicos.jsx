@@ -1,8 +1,7 @@
 import { MessageCircle, Monitor, TrendingUp, Package } from 'lucide-react'
+import { wa, MSG } from '../config/whatsapp'
 
 const Servicos = () => {
-  const whatsappUrl = (msg) => `https://wa.me/5521994078286?text=${encodeURIComponent(msg)}`
-
   const servicos = [
     {
       icon: <Monitor size={36} />,
@@ -17,7 +16,7 @@ const Servicos = () => {
         'Aparece no Google (SEO)',
         'Pronto em até 7 dias',
       ],
-      msg: 'Oi Fabiano! Quero um site profissional para meu negócio. Como funciona?',
+      msg: MSG.servicos.site,
     },
     {
       icon: <TrendingUp size={36} />,
@@ -32,7 +31,7 @@ const Servicos = () => {
         'Relatório mensal de resultados',
         'Otimização contínua',
       ],
-      msg: 'Oi Fabiano! Quero saber mais sobre tráfego pago para meu negócio. Como funciona?',
+      msg: MSG.servicos.trafego,
     },
     {
       icon: <Package size={36} />,
@@ -47,7 +46,7 @@ const Servicos = () => {
         'SEO crescendo a longo prazo',
         'Suporte direto via WhatsApp',
       ],
-      msg: 'Oi Fabiano! Tenho interesse no pacote site + tráfego pago. Como funciona?',
+      msg: MSG.servicos.pacote,
     },
   ]
 
@@ -89,7 +88,7 @@ const Servicos = () => {
                 ))}
               </ul>
               <a
-                href={whatsappUrl(s.msg)}
+                href={wa(s.msg)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm font-bold text-white bg-gradient-to-r ${s.cor} hover:opacity-90 transition-opacity`}

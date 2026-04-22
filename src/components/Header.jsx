@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Menu, X, MessageCircle } from 'lucide-react'
 import { Link, useLocation } from 'react-router-dom'
+import { wa, MSG } from '../config/whatsapp'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -23,12 +24,12 @@ const Header = () => {
   const menuItems = [
     { label: 'Início',    to: '/' },
     { label: 'Serviços', to: '/servicos' },
-    { label: 'Portfólio', href: isHome ? '#portfolio' : '/#portfolio' },
+    { label: 'Portfólio', to: '/portfolio' },
     { label: 'Preços',   to: '/precos' },
-    { label: 'Contato',  href: isHome ? '#contact' : '/#contact' },
+    { label: 'Contato',  to: '/contact' },
   ]
 
-  const whatsappUrl = `https://wa.me/5521994078286?text=${encodeURIComponent('Oi Fabiano! Quero um site profissional. Pode me ajudar?')}`
+  const whatsappUrl = wa(MSG.header)
 
   const renderMenuItem = (item, mobile = false) => {
     const base = mobile

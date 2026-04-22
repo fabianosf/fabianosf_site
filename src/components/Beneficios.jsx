@@ -1,7 +1,8 @@
 import { Users, Star, Zap, ShieldCheck, TrendingUp, MessageCircle } from 'lucide-react'
+import { wa, MSG } from '../config/whatsapp'
 
 const Beneficios = () => {
-  const whatsappUrl = `https://wa.me/5521994078286?text=${encodeURIComponent('Oi Fabiano! Quero um site que traga mais clientes para o meu negócio!')}`
+  const whatsappUrl = wa(MSG.beneficios)
 
   const beneficios = [
     {

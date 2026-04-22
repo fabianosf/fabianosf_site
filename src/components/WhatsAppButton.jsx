@@ -1,9 +1,13 @@
-import { useState } from 'react';
-import { MessageCircle } from 'lucide-react';
+import { useState } from 'react'
+import { MessageCircle } from 'lucide-react'
+import { useLocation } from 'react-router-dom'
+import { wa, MSG } from '../config/whatsapp'
 
 const WhatsAppButton = () => {
-  const [isHovered, setIsHovered] = useState(false);
-  const whatsappUrl = `https://wa.me/5521994078286?text=${encodeURIComponent('Olá! Quero um site profissional. Pode me ajudar?')}`;
+  const [isHovered, setIsHovered] = useState(false)
+  const { pathname } = useLocation()
+  const msg = MSG.paginas[pathname] ?? MSG.paginas.geral
+  const whatsappUrl = wa(msg)
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
@@ -28,7 +32,7 @@ const WhatsAppButton = () => {
       </a>
       <div className="absolute inset-0 bg-green-400 rounded-full animate-ping opacity-20 pointer-events-none" />
     </div>
-  );
-};
+  )
+}
 
-export default WhatsAppButton;
+export default WhatsAppButton

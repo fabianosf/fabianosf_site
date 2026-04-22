@@ -1,7 +1,8 @@
 import { XCircle, CheckCircle, MessageCircle } from 'lucide-react'
+import { wa, MSG } from '../config/whatsapp'
 
 const Problema = () => {
-  const whatsappUrl = `https://wa.me/5521994078286?text=${encodeURIComponent('Oi Fabiano! Quero entender como seu site pode ajudar meu negócio a receber mais clientes.')}`
+  const whatsappUrl = wa(MSG.problema)
 
   const comparacao = [
     { ruim: 'Depende só de indicação para ter cliente novo', bom: 'Cliente novo chegando pelo Google todo dia' },

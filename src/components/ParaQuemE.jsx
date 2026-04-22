@@ -1,7 +1,8 @@
 import { MessageCircle, Building2, Stethoscope, Dumbbell, Store, User, HelpCircle, CheckCircle, XCircle } from 'lucide-react'
+import { wa, MSG } from '../config/whatsapp'
 
 const ParaQuemE = () => {
-  const whatsappUrl = `https://wa.me/5521994078286?text=${encodeURIComponent('Oi Fabiano! Quero entender se seu serviço é o certo para o meu negócio. Pode me ajudar?')}`
+  const whatsappUrl = wa(MSG.paraQuemE)
 
   const segmentos = [
     { icon: <Dumbbell size={28} />, titulo: 'Academia', cor: 'from-orange-400 to-red-500' },
