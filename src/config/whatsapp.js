@@ -39,7 +39,7 @@ export const MSG = {
 
   // ── Planos de preço ────────────────────────────────────────────────────────
   planos: {
-    captacao:        `Oi Fabiano! Tenho interesse na Página de Captação (R$800). Como funciona?`,
+    captacao:        `Oi Fabiano! Tenho interesse no site por R$300. Como funciona?`,
     profissional:    `Oi Fabiano! Tenho interesse no Site Profissional (R$1.500). Como funciona?`,
     clientesTodoDia: `Oi Fabiano! Tenho interesse no pacote Clientes Todo Dia (site + tráfego pago). Como funciona?`,
     duvida:          `Oi Fabiano! Preciso de ajuda para escolher o melhor plano para o meu negócio.`,

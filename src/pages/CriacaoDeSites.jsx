@@ -6,7 +6,7 @@ import { wa, MSG } from '../config/whatsapp'
 const CriacaoDeSites = () => {
   useSEO({
     title: 'Criação de Sites Profissionais | Rio de Janeiro',
-    description: 'Criação de sites profissionais para pequenos negócios no Rio de Janeiro. Design moderno, rápido no celular e otimizado para o Google. A partir de R$800.',
+    description: 'Criação de sites profissionais por R$300. Entrega em até 3 dias, 1 ano de hospedagem grátis, responsivo e com botão de WhatsApp. Negócios locais no Rio de Janeiro.',
     canonical: 'https://fabianosf.com/criacao-de-sites',
   })
 
@@ -99,7 +99,7 @@ const CriacaoDeSites = () => {
           </div>
 
           <p className="text-gray-500 text-sm mt-5">
-            💰 A partir de <strong className="text-white">R$ 800</strong> · Parcelamento disponível · Orçamento grátis
+            💰 <strong className="text-white">R$ 300</strong> · Entrega em 3 dias · 1 ano de hospedagem grátis
           </p>
         </div>
       </section>
@@ -221,7 +221,7 @@ const CriacaoDeSites = () => {
         <div className="container mx-auto max-w-3xl text-center">
           {/* H2 */}
           <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
-            Pronto para ter seu site em <span className="text-teal-400">7 dias?</span>
+            Pronto para ter seu site em <span className="text-teal-400">3 dias?</span>
           </h2>
           <p className="text-gray-300 mb-8 text-lg">
             Me chama no WhatsApp agora. A conversa é rápida, gratuita e sem compromisso. Em menos de uma semana seu site pode estar no ar gerando clientes.
@@ -236,7 +236,7 @@ const CriacaoDeSites = () => {
             FALAR NO WHATSAPP AGORA
           </a>
           <p className="text-gray-500 text-sm mt-4">
-            💰 A partir de R$800 · ⚡ Resposta em minutos · ✅ 50+ sites entregues
+            💰 R$300 à vista · ⚡ Entrega em 3 dias · ✅ 50+ sites entregues
           </p>
         </div>
       </section>

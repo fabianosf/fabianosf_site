@@ -37,8 +37,8 @@ const useSEO = ({ title, description, canonical }) => {
 
     // Cleanup: restore default on unmount
     return () => {
-      document.title = 'Criação de Sites Profissionais | Fabiano Freitas'
-      if (metaDesc) metaDesc.setAttribute('content', 'Criação de sites profissionais que geram clientes no WhatsApp. Sites para academias, clínicas, empresas e autônomos. A partir de R$800. Fale agora!')
+      document.title = 'Site Profissional por R$300 em até 3 dias | Fabiano Freitas'
+      if (metaDesc) metaDesc.setAttribute('content', 'Site ou landing page profissional por R$300. Entrega em até 3 dias, 1 ano de hospedagem grátis. Negócios locais no Rio de Janeiro.')
       if (link => link) {
         let lnk = document.querySelector('link[rel="canonical"]')
         if (lnk) lnk.setAttribute('href', 'https://fabianosf.com')

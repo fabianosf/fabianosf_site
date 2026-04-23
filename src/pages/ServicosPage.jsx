@@ -9,7 +9,7 @@ import { wa, MSG } from '../config/whatsapp'
 const ServicosPage = () => {
   useSEO({
     title: 'Serviços | Criação de Sites e Tráfego Pago — Fabiano Freitas',
-    description: 'Criação de sites profissionais, tráfego pago e pacote completo para negócios locais. Sites que geram clientes pelo WhatsApp. A partir de R$800.',
+    description: 'Sites profissionais por R$300 em até 3 dias. Tráfego pago e pacote completo para negócios locais que querem receber clientes pelo WhatsApp.',
     canonical: 'https://fabianosf.com/servicos',
   })
 

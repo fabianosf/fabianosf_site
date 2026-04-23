@@ -38,7 +38,7 @@ const Precos = () => {
         'Galeria de fotos e vídeos',
         'SEO avançado para o Google',
         'Rápido no celular',
-        'Entrega em até 7 dias',
+        'Entrega em até 5 dias',
         '3 rodadas de ajuste',
         '30 dias de suporte gratuito',
       ],

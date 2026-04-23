@@ -6,7 +6,7 @@ import { wa, MSG } from '../config/whatsapp'
 const SiteParaAcademia = () => {
   useSEO({
     title: 'Site para Academia | Atraia Alunos pelo WhatsApp',
-    description: 'Site profissional para academia. Mostre horários, professores e planos. Receba interessados direto no WhatsApp. A partir de R$800. Orçamento grátis!',
+    description: 'Site profissional para academia por R$300. Entrega em até 3 dias, 1 ano de hospedagem grátis. Novos alunos chegando direto pelo WhatsApp.',
     canonical: 'https://fabianosf.com/site-para-academia',
   })
 
@@ -103,7 +103,7 @@ const SiteParaAcademia = () => {
             </a>
           </div>
           <p className="text-gray-500 text-sm mt-5">
-            💰 A partir de <strong className="text-white">R$ 800</strong> · Entrega em 7 dias · Orçamento grátis
+            💰 <strong className="text-white">R$ 300</strong> · Entrega em 3 dias · 1 ano de hospedagem grátis
           </p>
         </div>
       </section>
@@ -183,7 +183,7 @@ const SiteParaAcademia = () => {
             <MessageCircle size={22} />
             Pedir orçamento para minha academia
           </a>
-          <p className="text-gray-500 text-sm mt-3">Orçamento grátis · Entrega em 7 dias · Resposta em minutos</p>
+          <p className="text-gray-500 text-sm mt-3">R$300 à vista · Entrega em 3 dias · Resposta em minutos</p>
         </div>
       </section>
 

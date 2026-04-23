@@ -7,8 +7,8 @@ import { wa, MSG } from '../config/whatsapp'
 
 const PrecosPage = () => {
   useSEO({
-    title: 'Preços | Criação de Sites a partir de R$800 — Fabiano Freitas',
-    description: 'Planos de criação de site profissional a partir de R$800. Página de Captação, Site Profissional ou Clientes Todo Dia (site + tráfego pago). Sem taxas ocultas.',
+    title: 'Preços | Site por R$300 em até 3 dias — Fabiano Freitas',
+    description: 'Site profissional por R$300 com 1 ano de hospedagem grátis e entrega em até 3 dias. Planos para todos os negócios locais. Sem taxas ocultas.',
     canonical: 'https://fabianosf.com/precos',
   })
 

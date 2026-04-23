@@ -6,7 +6,7 @@ import { wa, MSG } from '../config/whatsapp'
 const SiteParaClinica = () => {
   useSEO({
     title: 'Site para Clínica | Receba Mais Pacientes pelo WhatsApp',
-    description: 'Site profissional para clínicas e consultórios. Apresente serviços, médicos e facilite agendamentos. Pacientes novos pelo WhatsApp. A partir de R$800.',
+    description: 'Site profissional para clínicas e consultórios por R$300. Entrega em até 3 dias, 1 ano de hospedagem grátis. Pacientes novos chegando pelo WhatsApp.',
     canonical: 'https://fabianosf.com/site-para-clinica',
   })
 
@@ -103,7 +103,7 @@ const SiteParaClinica = () => {
             </a>
           </div>
           <p className="text-gray-500 text-sm mt-5">
-            💰 A partir de <strong className="text-white">R$ 800</strong> · Entrega em 7 dias · Orçamento grátis
+            💰 <strong className="text-white">R$ 300</strong> · Entrega em 3 dias · 1 ano de hospedagem grátis
           </p>
         </div>
       </section>
@@ -182,7 +182,7 @@ const SiteParaClinica = () => {
             <MessageCircle size={22} />
             Pedir orçamento para minha clínica
           </a>
-          <p className="text-gray-500 text-sm mt-3">Orçamento grátis · Entrega em 7 dias · Resposta em minutos</p>
+          <p className="text-gray-500 text-sm mt-3">R$300 à vista · Entrega em 3 dias · Resposta em minutos</p>
         </div>
       </section>
 
