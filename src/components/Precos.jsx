@@ -4,40 +4,39 @@ import { wa, MSG } from '../config/whatsapp'
 const Precos = () => {
   const planos = [
     {
-      nome: 'Página de Captação',
-      badge: null,
-      tagline: 'Para quem quer começar rápido e direto',
-      preco: 'R$ 800',
-      descricao: 'Uma página focada em um único objetivo: fazer o visitante entrar em contato com você pelo WhatsApp.',
-      parcelamento: 'ou 2x R$ 400 sem juros',
+      nome: 'Site / Landing Page',
+      badge: 'OFERTA PRINCIPAL',
+      tagline: 'Para quem quer começar rápido e sem gastar muito',
+      preco: 'R$ 300',
+      descricao: 'Site ou landing page profissional, responsivo, com botão de WhatsApp e SEO básico. Pronto em até 3 dias.',
+      parcelamento: '1 ano de hospedagem grátis inclusa',
       itens: [
-        'Página única de alta conversão',
-        'Design profissional ao seu segmento',
-        'Botão WhatsApp estratégico',
-        'Aparece no Google (SEO básico)',
-        'Rápido no celular',
-        'Entrega em até 5 dias',
+        'Site ou landing page completa',
+        '1 ano de hospedagem grátis inclusa',
+        'Responsivo no celular',
+        'Botão de WhatsApp integrado',
+        'SEO básico (aparece no Google)',
+        'Entrega em até 3 dias',
         '2 rodadas de ajuste',
       ],
-      ideal: 'Ideal para autônomos, profissionais liberais e pequenos negócios começando.',
+      ideal: 'Ideal para autônomos, prestadores de serviço, salões, clínicas e qualquer negócio local.',
       cor: 'from-teal-400 to-teal-600',
-      destaque: false,
+      destaque: true,
       msg: MSG.planos.captacao,
     },
     {
       nome: 'Site Profissional',
-      badge: 'MAIS ESCOLHIDO',
+      badge: null,
       tagline: 'Para quem quer se posicionar acima da concorrência',
-      preco: 'R$ 1.500',
+      preco: 'R$ 800',
       descricao: 'Site completo com várias páginas, apresentando seus serviços, sua história e tudo que você precisa para vender mais.',
-      parcelamento: 'ou 3x R$ 500 sem juros',
+      parcelamento: 'ou 2x R$ 400 sem juros',
       itens: [
         'Site com até 5 páginas',
         'Design exclusivo para o seu negócio',
         'WhatsApp em todas as páginas',
         'Galeria de fotos e vídeos',
         'SEO avançado para o Google',
-        'Blog (opcional)',
         'Rápido no celular',
         'Entrega em até 7 dias',
         '3 rodadas de ajuste',
@@ -45,14 +44,14 @@ const Precos = () => {
       ],
       ideal: 'Ideal para academias, clínicas, empresas e autônomos que querem se destacar.',
       cor: 'from-blue-500 to-indigo-600',
-      destaque: true,
+      destaque: false,
       msg: MSG.planos.profissional,
     },
     {
       nome: 'Clientes Todo Dia',
       badge: null,
       tagline: 'Para quem quer escalar de verdade',
-      preco: 'R$ 2.500+',
+      preco: 'R$ 1.500+',
       descricao: 'Site profissional + gestão de tráfego pago. A combinação que enche o WhatsApp de cliente desde a primeira semana.',
       parcelamento: 'Condições a combinar',
       itens: [
@@ -80,19 +79,18 @@ const Precos = () => {
             Investimento
           </span>
           <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
-            Quanto custa ter um site que trabalha{' '}
+            Investimento{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-green-400">
-              por você 24 horas por dia?
+              sem surpresa no final.
             </span>
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-4">
-            Preço justo, sem surpresas e sem taxas escondidas.
+            Preço justo, sem taxas escondidas.
             Você sabe exatamente o que vai receber antes de fechar.
           </p>
-          {/* Ancoragem de valor */}
           <div className="inline-flex items-center gap-3 bg-white/10 border border-white/20 rounded-full px-6 py-2.5 text-sm text-gray-300 max-w-full text-center">
             <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse flex-shrink-0"></span>
-            Um funcionário meio período custa mais de R$800 por mês — seu site trabalha 24h por dia, para sempre.
+            Comece com R$ 300. Se quiser mais resultado, é só avançar de plano.
           </div>
         </div>
 

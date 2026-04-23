@@ -5,26 +5,26 @@ const ParaQuemE = () => {
   const whatsappUrl = wa(MSG.paraQuemE)
 
   const segmentos = [
-    { icon: <Dumbbell size={28} />, titulo: 'Academia', cor: 'from-orange-400 to-red-500' },
-    { icon: <Stethoscope size={28} />, titulo: 'Clínica', cor: 'from-blue-400 to-blue-600' },
-    { icon: <Store size={28} />, titulo: 'Salão / Estúdio', cor: 'from-pink-400 to-rose-500' },
-    { icon: <Building2 size={28} />, titulo: 'Empresa local', cor: 'from-teal-400 to-teal-600' },
-    { icon: <User size={28} />, titulo: 'Autônomo', cor: 'from-purple-400 to-purple-600' },
-    { icon: <HelpCircle size={28} />, titulo: 'Outro segmento', cor: 'from-gray-400 to-gray-600' },
+    { icon: <Stethoscope size={28} />, titulo: 'Clínica / Consultório', cor: 'from-blue-400 to-blue-600' },
+    { icon: <Store size={28} />, titulo: 'Salão / Barbearia', cor: 'from-pink-400 to-rose-500' },
+    { icon: <Dumbbell size={28} />, titulo: 'Academia / Estúdio', cor: 'from-orange-400 to-red-500' },
+    { icon: <Building2 size={28} />, titulo: 'Restaurante / Bar', cor: 'from-yellow-400 to-orange-500' },
+    { icon: <User size={28} />, titulo: 'Autônomo / Prestador de serviço', cor: 'from-purple-400 to-purple-600' },
+    { icon: <HelpCircle size={28} />, titulo: 'Qualquer negócio local', cor: 'from-teal-400 to-teal-600' },
   ]
 
   const paraVoce = [
-    'Você tem uma clínica, academia, salão, escritório ou atua como autônomo',
-    'Seu negócio depende muito de indicação ou de postar no Instagram',
-    'Você nunca teve site — ou tem um site que ninguém encontra',
-    'Você quer receber mais clientes sem precisar ficar sempre online',
-    'Você tentou fazer anúncio sozinho e não funcionou como esperava',
+    'Você tem clínica, academia, salão, restaurante ou atua como autônomo',
+    'Seu negócio depende só de indicação e você quer mudar isso',
+    'Você nunca teve site — ou tem um que ninguém encontra',
+    'Você quer receber cliente novo sem precisar ficar sempre postando',
     'Você quer algo profissional sem precisar entender nada de tecnologia',
+    'Você quer gastar pouco e ver resultado rápido',
   ]
 
   const naoParaVoce = [
-    'Você já tem um time de marketing interno estruturado',
-    'Você precisa de e-commerce com catálogo de produtos',
+    'Você precisa de e-commerce com catálogo e carrinho de compras',
+    'Você quer um sistema complexo com área do cliente ou login',
     'Você quer algo pronto para amanhã sem nenhuma conversa antes',
   ]
 
@@ -37,12 +37,12 @@ const ParaQuemE = () => {
             Público atendido
           </span>
           <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4 leading-tight">
-            Atendo qualquer negócio local{' '}
-            <span className="text-teal-600">que quer receber clientes pelo WhatsApp.</span>
+            Você se encaixa aqui{' '}
+            <span className="text-teal-600">se tem um desses negócios.</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Academia, clínica, salão, loja, autônomo — não importa o ramo.
-            Se você precisa de cliente novo sem depender de indicação, eu tenho a solução.
+            Clínica, salão, academia, restaurante, autônomo, prestador de serviço —
+            qualquer negócio local que quer aparecer no Google e receber cliente pelo WhatsApp.
           </p>
         </div>
 
@@ -102,7 +102,7 @@ const ParaQuemE = () => {
             className="inline-flex items-center gap-3 px-8 py-4 bg-green-500 hover:bg-green-400 text-white rounded-xl font-black text-lg shadow-lg shadow-green-500/20 transform hover:scale-105 transition-all duration-200"
           >
             <MessageCircle size={22} />
-            Isso é para mim — quero falar com o Fabiano
+            QUERO MEU SITE POR R$ 300
           </a>
         </div>
 

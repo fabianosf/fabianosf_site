@@ -49,10 +49,11 @@ const ProvasSocial = () => {
             Resultados reais
           </span>
           <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4 leading-tight">
-            Eles também dependiam de indicação.{' '}
-            <span className="text-teal-600">Hoje o WhatsApp não para.</span>
+            Sites entregues.{' '}
+            <span className="text-teal-600">Clientes chegando.</span>
           </h2>
           <p className="text-lg text-gray-500 max-w-xl mx-auto">
+            Veja alguns sites que já estão no ar e trazendo cliente pelo WhatsApp.
             Clientes reais. Resultados reais. Sem exagero.
           </p>
         </div>

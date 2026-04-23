@@ -9,8 +9,8 @@ const FAQ = () => {
 
   const perguntas = [
     {
-      pergunta: 'R$800 não é caro para uma página só?',
-      resposta: `Depende de como você calcula.\n\nSe seu negócio faturar R$3.000 a mais no mês porque um cliente chegou pelo site — o site pagou o custo dele em 8 dias.\n\nUm funcionário meio período custa mais de R$800 por mês. Um post impulsionado no Instagram some em 3 dias. Seu site trabalha 24 horas por dia, sem férias e sem 13º.\n\nO que é caro: ter um negócio que depende de indicação e não tem controle sobre quando o próximo cliente chega.`,
+      pergunta: 'R$300 é realmente suficiente para um site profissional?',
+      resposta: `Sim. Por R$300 você recebe um site ou landing page completa, responsiva no celular, com botão de WhatsApp, SEO básico e 1 ano de hospedagem grátis inclusa. Entregue em até 3 dias.\n\nNão é um site de template genérico. É feito por mim, adaptado ao seu negócio e ao seu cliente.\n\nSe quiser mais páginas, galeria, blog ou gestão de anúncios — existem planos maiores. Mas para começar a aparecer no Google e receber cliente, R$300 resolve.`,
     },
     {
       pergunta: 'Preciso saber programação para manter o site?',
@@ -30,7 +30,7 @@ const FAQ = () => {
     },
     {
       pergunta: 'Posso parcelar o investimento?',
-      resposta: `Sim. Todos os planos têm opção de parcelamento.\n\nPágina de Captação (R$800): em até 2x de R$400 sem juros.\nSite Profissional (R$1.500): em até 3x de R$500 sem juros.\nClientes Todo Dia (R$2.500+): parcelamento e condições a combinar conforme o escopo.\n\nMe chama no WhatsApp e a gente resolve — sem burocracia.`,
+      resposta: `O plano de R$300 é à vista.\n\nPara o Site Profissional (R$800): em até 2x de R$400 sem juros.\nPara o Clientes Todo Dia (R$1.500+): parcelamento e condições a combinar conforme o escopo.\n\nMe chama no WhatsApp e a gente resolve — sem burocracia.`,
     },
   ]
 

@@ -16,8 +16,8 @@ import Contact from '../components/Contact'
 
 const Home = () => {
   useSEO({
-    title: 'Criação de Sites Profissionais | Fabiano Freitas',
-    description: 'Criação de sites profissionais que geram clientes no WhatsApp. Sites para academias, clínicas, empresas e autônomos. A partir de R$800. Fale agora!',
+    title: 'Site Profissional por R$300 em até 3 dias | Fabiano Freitas',
+    description: 'Site ou landing page profissional por R$300. Entrega em até 3 dias, 1 ano de hospedagem grátis, responsivo no celular e com botão de WhatsApp. Negócios locais no Rio de Janeiro.',
     canonical: 'https://fabianosf.com/',
   })
 

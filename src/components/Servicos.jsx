@@ -14,7 +14,7 @@ const Servicos = () => {
         'Rápido no celular',
         'Botão WhatsApp estratégico',
         'Aparece no Google (SEO)',
-        'Pronto em até 7 dias',
+        'Pronto em até 3 dias',
       ],
       msg: MSG.servicos.site,
     },
