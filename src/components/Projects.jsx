@@ -55,6 +55,16 @@ const Projects = () => {
       label: 'leadhouse.com.br',
       icone: '🏠',
     },
+    {
+      categoria: 'Plataforma SaaS',
+      titulo: 'Postay',
+      resultado: 'Agendamento automático de posts com IA',
+      descricao: 'Plataforma completa para agendamento de posts no Instagram, Facebook e TikTok. Gera legendas com IA, agenda Reels e carrosséis, gerencia múltiplas contas e posta automaticamente — sem precisar deixar o celular ligado.',
+      cor: 'from-violet-500 to-fuchsia-600',
+      link: 'https://postay.com.br',
+      label: 'postay.com.br',
+      icone: '📅',
+    },
   ]
 
   return (
