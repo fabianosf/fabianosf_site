@@ -1,8 +1,8 @@
 import { MessageCircle, CheckCircle } from 'lucide-react'
-import { wa, MSG } from '../config/whatsapp'
+import { wa } from '../config/whatsapp'
 
 const CTAFinal = () => {
-  const whatsappUrl = wa(MSG.ctaFinal)
+  const whatsappUrl = wa()
 
   return (
     <section id="cta-final" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">

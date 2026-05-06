@@ -1,8 +1,8 @@
 import { Globe, Wifi, Smartphone, MessageCircle, Search, RefreshCw, Check } from 'lucide-react'
-import { wa, MSG } from '../config/whatsapp'
+import { wa } from '../config/whatsapp'
 
 const Beneficios = () => {
-  const whatsappUrl = wa(MSG.beneficios)
+  const whatsappUrl = wa()
 
   const itens = [
     {

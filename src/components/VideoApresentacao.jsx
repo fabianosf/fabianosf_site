@@ -1,12 +1,12 @@
 import { useState, useRef } from 'react'
 import { MessageCircle, Play } from 'lucide-react'
-import { wa, MSG } from '../config/whatsapp'
+import { wa } from '../config/whatsapp'
 
 const VideoApresentacao = () => {
   const [playing, setPlaying] = useState(false)
   const videoRef = useRef(null)
 
-  const whatsappUrl = wa(MSG.video)
+  const whatsappUrl = wa()
 
   const handlePlay = () => {
     setPlaying(true)

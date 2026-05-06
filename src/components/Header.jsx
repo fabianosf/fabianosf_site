@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Menu, X, MessageCircle } from 'lucide-react'
 import { Link, useLocation } from 'react-router-dom'
-import { wa, MSG } from '../config/whatsapp'
+import { wa } from '../config/whatsapp'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -29,7 +29,7 @@ const Header = () => {
     { label: 'Contato',  to: '/contact' },
   ]
 
-  const whatsappUrl = wa(MSG.header)
+  const whatsappUrl = wa()
 
   const renderMenuItem = (item, mobile = false) => {
     const base = mobile

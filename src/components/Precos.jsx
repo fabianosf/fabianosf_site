@@ -1,5 +1,5 @@
 import { Check, MessageCircle, Star, Zap } from 'lucide-react'
-import { wa, MSG } from '../config/whatsapp'
+import { wa } from '../config/whatsapp'
 
 const Precos = () => {
   const planos = [
@@ -22,7 +22,6 @@ const Precos = () => {
       ideal: 'Ideal para autônomos, prestadores de serviço, salões, clínicas e qualquer negócio local.',
       cor: 'from-teal-400 to-teal-600',
       destaque: true,
-      msg: MSG.planos.captacao,
     },
     {
       nome: 'Site Profissional',
@@ -45,7 +44,6 @@ const Precos = () => {
       ideal: 'Ideal para academias, clínicas, empresas e autônomos que querem se destacar.',
       cor: 'from-blue-500 to-indigo-600',
       destaque: false,
-      msg: MSG.planos.profissional,
     },
     {
       nome: 'Clientes Todo Dia',
@@ -67,7 +65,6 @@ const Precos = () => {
       ideal: 'Ideal para clínicas, academias, salões e quem quer resultado desde a semana 1.',
       cor: 'from-purple-500 to-pink-600',
       destaque: false,
-      msg: MSG.planos.clientesTodoDia,
     },
   ]
 
@@ -138,7 +135,7 @@ const Precos = () => {
                 <p className="text-xs text-teal-400/80 italic mb-5">{plano.ideal}</p>
 
                 <a
-                  href={wa(plano.msg)}
+                  href={wa()}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-black text-white bg-gradient-to-r ${plano.cor} hover:opacity-90 transition-opacity`}
@@ -155,7 +152,7 @@ const Precos = () => {
           <p className="text-gray-400 text-sm">
             Não sabe qual escolher?{' '}
             <a
-              href={wa(MSG.planos.duvida)}
+              href={wa()}
               target="_blank"
               rel="noopener noreferrer"
               className="text-teal-400 hover:text-teal-300 underline font-semibold"

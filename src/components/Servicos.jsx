@@ -1,5 +1,5 @@
 import { MessageCircle, Monitor, TrendingUp, Package } from 'lucide-react'
-import { wa, MSG } from '../config/whatsapp'
+import { wa } from '../config/whatsapp'
 
 const Servicos = () => {
   const servicos = [
@@ -16,7 +16,6 @@ const Servicos = () => {
         'Aparece no Google (SEO)',
         'Pronto em até 3 dias',
       ],
-      msg: MSG.servicos.site,
     },
     {
       icon: <TrendingUp size={36} />,
@@ -31,7 +30,6 @@ const Servicos = () => {
         'Relatório mensal de resultados',
         'Otimização contínua',
       ],
-      msg: MSG.servicos.trafego,
     },
     {
       icon: <Package size={36} />,
@@ -46,7 +44,6 @@ const Servicos = () => {
         'SEO crescendo a longo prazo',
         'Suporte direto via WhatsApp',
       ],
-      msg: MSG.servicos.pacote,
     },
   ]
 
@@ -88,7 +85,7 @@ const Servicos = () => {
                 ))}
               </ul>
               <a
-                href={wa(s.msg)}
+                href={wa()}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm font-bold text-white bg-gradient-to-r ${s.cor} hover:opacity-90 transition-opacity`}

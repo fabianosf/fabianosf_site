@@ -1,8 +1,8 @@
 import { ExternalLink, MessageCircle } from 'lucide-react'
-import { wa, MSG } from '../config/whatsapp'
+import { wa } from '../config/whatsapp'
 
 const Projects = () => {
-  const whatsappUrl = wa(MSG.projetos)
+  const whatsappUrl = wa()
 
   const projetos = [
     {

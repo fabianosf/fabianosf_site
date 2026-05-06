@@ -1,8 +1,8 @@
 import { MessageCircle, ArrowDown, Monitor, Check } from 'lucide-react'
-import { wa, MSG } from '../config/whatsapp'
+import { wa } from '../config/whatsapp'
 
 const Hero = () => {
-  const whatsappUrl = wa(MSG.hero)
+  const whatsappUrl = wa()
 
   return (
     <section id="hero" className="min-h-screen flex items-center pt-20 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-teal-900 to-gray-900 relative overflow-hidden">

@@ -1,10 +1,10 @@
 import { MessageCircle, Mail, Linkedin, Heart } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { wa, MSG } from '../config/whatsapp'
+import { wa } from '../config/whatsapp'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
-  const whatsappUrl = wa(MSG.footer)
+  const whatsappUrl = wa()
 
   const menuLinks = [
     { label: 'Benefícios', href: '/#beneficios' },

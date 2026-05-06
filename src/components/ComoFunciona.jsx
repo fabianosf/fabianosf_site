@@ -1,8 +1,8 @@
 import { MessageCircle, Send, Monitor, ArrowRight } from 'lucide-react'
-import { wa, MSG } from '../config/whatsapp'
+import { wa } from '../config/whatsapp'
 
 const ComoFunciona = () => {
-  const whatsappUrl = wa(MSG.comoFunciona)
+  const whatsappUrl = wa()
 
   const passos = [
     {

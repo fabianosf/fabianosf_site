@@ -1,8 +1,8 @@
 import { MessageCircle, Building2, Stethoscope, Dumbbell, Store, User, HelpCircle, CheckCircle, XCircle } from 'lucide-react'
-import { wa, MSG } from '../config/whatsapp'
+import { wa } from '../config/whatsapp'
 
 const ParaQuemE = () => {
-  const whatsappUrl = wa(MSG.paraQuemE)
+  const whatsappUrl = wa()
 
   const segmentos = [
     { icon: <Stethoscope size={28} />, titulo: 'Clínica / Consultório', cor: 'from-blue-400 to-blue-600' },

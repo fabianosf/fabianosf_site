@@ -1,8 +1,8 @@
 import { MessageCircle, Quote } from 'lucide-react'
-import { wa, MSG } from '../config/whatsapp'
+import { wa } from '../config/whatsapp'
 
 const ProvasSocial = () => {
-  const whatsappUrl = wa(MSG.provasSocial)
+  const whatsappUrl = wa()
 
   const depoimentos = [
     {

@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { ChevronDown, MessageCircle } from 'lucide-react'
-import { wa, MSG } from '../config/whatsapp'
+import { wa } from '../config/whatsapp'
 
 const FAQ = () => {
   const [aberto, setAberto] = useState(null)
 
-  const whatsappUrl = wa(MSG.faq)
+  const whatsappUrl = wa()
 
   const perguntas = [
     {

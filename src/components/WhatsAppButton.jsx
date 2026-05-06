@@ -1,13 +1,10 @@
 import { useState } from 'react'
 import { MessageCircle } from 'lucide-react'
-import { useLocation } from 'react-router-dom'
-import { wa, MSG } from '../config/whatsapp'
+import { wa } from '../config/whatsapp'
 
 const WhatsAppButton = () => {
   const [isHovered, setIsHovered] = useState(false)
-  const { pathname } = useLocation()
-  const msg = MSG.paginas[pathname] ?? MSG.paginas.geral
-  const whatsappUrl = wa(msg)
+  const whatsappUrl = wa()
 
   return (
     <div className="fixed bottom-6 right-6 z-50">

@@ -1,8 +1,8 @@
 import { XCircle, CheckCircle, MessageCircle } from 'lucide-react'
-import { wa, MSG } from '../config/whatsapp'
+import { wa } from '../config/whatsapp'
 
 const Problema = () => {
-  const whatsappUrl = wa(MSG.problema)
+  const whatsappUrl = wa()
 
   const comparacao = [
     { ruim: 'Depende só de indicação para ter cliente novo', bom: 'Cliente novo chegando pelo Google todo dia' },

@@ -3,7 +3,7 @@ import useSEO from '../utils/useSEO'
 import Precos from '../components/Precos'
 import FAQ from '../components/FAQ'
 import { MessageCircle, ArrowLeft } from 'lucide-react'
-import { wa, MSG } from '../config/whatsapp'
+import { wa } from '../config/whatsapp'
 
 const PrecosPage = () => {
   useSEO({
@@ -12,7 +12,7 @@ const PrecosPage = () => {
     canonical: 'https://fabianosf.com/precos',
   })
 
-  const whatsappUrl = wa(MSG.precosPage)
+  const whatsappUrl = wa()
 
   return (
     <>

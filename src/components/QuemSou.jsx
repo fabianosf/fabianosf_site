@@ -1,8 +1,8 @@
 import { MessageCircle, Award, Clock, ThumbsUp } from 'lucide-react'
-import { wa, MSG } from '../config/whatsapp'
+import { wa } from '../config/whatsapp'
 
 const QuemSou = () => {
-  const whatsappUrl = wa(MSG.quemSou)
+  const whatsappUrl = wa()
 
   const numeros = [
     { valor: '50+', label: 'Sites entregues', icon: <Award size={20} />, cor: 'text-teal-400' },

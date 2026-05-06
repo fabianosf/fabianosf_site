@@ -4,7 +4,7 @@ import Servicos from '../components/Servicos'
 import ParaQuemE from '../components/ParaQuemE'
 import ComoFunciona from '../components/ComoFunciona'
 import { MessageCircle, ArrowLeft } from 'lucide-react'
-import { wa, MSG } from '../config/whatsapp'
+import { wa } from '../config/whatsapp'
 
 const ServicosPage = () => {
   useSEO({
@@ -13,7 +13,7 @@ const ServicosPage = () => {
     canonical: 'https://fabianosf.com/servicos',
   })
 
-  const whatsappUrl = wa(MSG.servicosPage)
+  const whatsappUrl = wa()
 
   return (
     <>
